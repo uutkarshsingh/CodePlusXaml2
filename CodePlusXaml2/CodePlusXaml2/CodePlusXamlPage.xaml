@@ -1,18 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CodePlusXaml2.CodePlusXamlPage">
 	<ContentPage.Content>
-		<StackLayout>
-			<StackLayout.Children>
-				<Label Text="Utkarsh Singh Rathor"
-						IsVisible="true"
-						Opacity="0.75"
-						HorizontalTextAlignment="Center"
-						VerticalOptions="CenterAndExpand"
-						TextColor="Blue"
-						BackgroundColor="#FF8080"
-						FontSize="Large"
-						FontAttributes="Bold,Italic" />
-			</StackLayout.Children>
-		</StackLayout>
+			<StackLayout>
+				<StackLayout.Children>
+				<Frame OutlineColor="Accent">
+					<Frame.Content>
+						<StackLayout Orientation="Horizontal">
+							<StackLayout.Children>
+								<BoxView Color="Red" />
+								<Label Text="Red"
+								VerticalOptions="Center" />
+							</StackLayout.Children>
+						</StackLayout>
+					</Frame.Content>
+				</Frame>
+				<Frame OutlineColor="Accent">
+					<Frame.Content>
+						<StackLayout Orientation="Horizontal">
+								<StackLayout.Children>
+									<BoxView Color="Green" />
+									<Label Text="Green"
+									VerticalOptions="Center" />
+								</StackLayout.Children>
+						</StackLayout>
+					</Frame.Content>
+				</Frame>
+				<Frame OutlineColor="Accent">
+					<Frame.Content>
+						<StackLayout Orientation="Horizontal">
+							<StackLayout.Children>
+								<BoxView Color="Blue" />
+								<Label Text="Blue"
+								VerticalOptions="Center" />
+							</StackLayout.Children>
+						</StackLayout>
+					</Frame.Content>
+				</Frame>
+				</StackLayout.Children>
+			</StackLayout>
 	</ContentPage.Content>
 </ContentPage>
